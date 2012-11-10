@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Метод Монте-Карло</title>
+  <link href="style/kurs.css" rel="stylesheet" type="text/css"/> 
+  <script src="js/monte.js"></script> <!-- скрипт с ф-й Монте-Карло -->
+   <script src="js/jquery.js"></script> <!-- библиотека  jquery -->
+    <script src="js/jquery.flot.js"></script> <!-- библиотека построения графиков flot для jquery -->
+     <script src="js/jquery.flot.navigate.js"></script> <!-- плагин с навигацией для библиотеки flot -->
+      <script src="js/plotInt.js"></script> <!-- скрипт с ф-й рисования графика -->
+ </head>
+ <body>
+  <div id="container">
+   <header><h1>Метод Монте-Карло</h1></header>
+   <article>
+    <FORM name="formMonte"> 
+    		Пределы интегрирования и подынтегральная функция:<br><br />
+    		<input type="text" size=5 name="inputb" title="Верхний предел интегрирования" value="3" required > <br><br /> 
+    		<img src="image/integral.png" height="50" align="middle" /> <input type="text" size=20 name="funcMonte" value="x*x" title="Подынтегральная функция" required > dx <br><br />  
+    		<input type="text" size=5 name="inputa" value="1" title="Нижний предел интегрирования" required ><br><br /> 
+    		Количество испытаний: <input type="text" size=8 name="inputn"  value= "1000" title="Количество проводимых испытаний" required ><br><br /> 
+    		Количество знаков после запятой: <input type="text" size=5 name="inputeps"  value= "3" title="Количество знаков после запятой" required ><br><br />
+    		<input type="button" value = "Вычислить" onClick="integMonte(checkForm(formMonte))"><input type="reset" value=0чистить> <br><br />
+    		Значение интеграла равно: <input type="text" size=20 name="result" readonly><br><br /> 
+    		<input class="plotInt" type="button" value= "Начертить график"> <br><br />  
+    		<div id="placeholder" style="width:600px;height:300px;"></div>
+    </FORM>
+    </article>
+   <div class="clear"></div>
+   <footer>cc-by</footer>
+  </div>
+ </body>
+</html>
+
+

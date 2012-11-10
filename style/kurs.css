@@ -1,0 +1,41 @@
+<style>
+   body {
+    font: 13pt sans-serif; /* Шрифт на веб-странице */
+    background: #54463d; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+   }
+   header {
+    background: #A6CAF0; /* Цвет фона */
+    font-size: 1.3em; /* Размер текста */
+    font-weight: bold; /* Жирное начертание */
+    color: #000000; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+   }
+   #container {
+    width: 1000px; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+    background: #f0f0f0; /* Цвет фона правой колонки */ 
+   }
+   article {
+    float: left; /* Обтекание по правому краю */
+    width: 70%; /* Ширина левой колонки */
+    padding: 10px; /* Поля вокруг текста */
+    background: #fff; /* Цвет фона левой колонки */
+   }
+   nav {
+    float: left; /* Обтекание по правому краю */
+    width: 120px; /* Ширина */
+    padding: 10px; /* Отступы вокруг текста */
+   }
+   #content p {
+    margin-top: 0.3em /* Отступ сверху */
+   }
+   footer {
+    background: #A6CAF0; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+   }
+   .clear { 
+    clear: both; /* Отмена обтекания */ 
+   }
+  </style>
